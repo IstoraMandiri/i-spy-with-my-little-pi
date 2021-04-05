@@ -15,6 +15,7 @@ Raspberry Pi Zero compatible USB webcam motion detection and WebDAV upload servi
 - `./install-node-14.x.sh` (from https://github.com/sdesalas/node-pi-zero)
 - `npm i`
 - Edit `./credentials.sh` and `source ./credentials.sh`
+- You can edit `src/constants.js`'s `DIFFERENCE` and `PERCENT` to tweak sensitivity.
 - `npm start` to try it out
 - `./service_manager.sh install` to run on boot
 
