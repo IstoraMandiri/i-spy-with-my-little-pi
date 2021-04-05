@@ -1,0 +1,14 @@
+[Unit]
+Description=I Spy With My Little Pi
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c 'source /home/pi/i-spy-with-my-little-pi/credentials.sh && /usr/bin/node /home/pi/i-spy-with-my-little-pi/src/index.js'
+WorkingDirectory=/home/pi/i-spy-with-my-little-pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

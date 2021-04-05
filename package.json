@@ -1,0 +1,29 @@
+{
+  "name": "i-spy-with-my-little-pi",
+  "version": "0.0.1",
+  "description": "Raspberry Pi Zero compatible USB webcam motion detection and WebDAV upload service",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hitchcott/i-spy-with-my-little-pi.git"
+  },
+  "author": "hitchcott@gmail.com",
+  "dependencies": {
+    "pam-diff": "^1.0.0",
+    "pipe2pam": "^0.6.2",
+    "webdav": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "2.2.1"
+  }
+}
